@@ -15,5 +15,17 @@ Template Method : Pour éviter de duppliquer les mêmes codes pour différents d
 
 Factory : Car il créera le bon type de document, selon ce qu'on demande, à un seul endroit. Ajouter un document, ça sera juste rajouter une nouvelle ligne sans devoir toucher à tout le code. Cela évitera les dupplications. (évolutivité)
 
+#3 - Architecture 
 
-
+/documents
+    Document.js      
+        => Classe parente, squelette commun (pour le template Method), GenererDocument()  
+    Facture.js             
+        => enfant, redéfinit son propre GetTitre(), afficherArticle() et calculerTotal()
+    Devis.js 
+        => enfant, redéfinit son propre GetTitre(), afficherArticle() et calculerTotal()              
+    Avoir.js 
+        => enfant, redéfinit son propre GetTitre(), afficherArticle() et calculerTotal()              
+    DocumentFactory.js  
+        => crée le bon document selon le type (pour le Factory)   
+index.js                   
