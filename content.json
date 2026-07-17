@@ -1,0 +1,28 @@
+[
+    {
+        "type": "facture",
+        "numero": "1",
+        "client": "Beau",
+        "lignes": [
+            { "description": "pffff", "prix": 1200 },
+            { "description": "pffff", "prix": 400 }
+        ]
+    },
+    {
+        "type": "devis",
+        "numero": "2",
+        "client": "Pas Beau",
+        "lignes": [
+            { "description": "pffff", "prix": 850 },
+            { "description": "pffff", "prix": 600 }
+        ]
+    },
+    {
+        "type": "avoir",
+        "numero": "3",
+        "client": "Moyen",
+        "lignes": [
+            { "description": "pffff", "prix": -500 }
+        ]
+    }
+]
