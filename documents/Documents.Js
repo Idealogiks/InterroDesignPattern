@@ -1,5 +1,6 @@
 export default class Documents {
-    constructor() {
+    constructor(data) {
+        this.data = data;
     }
 
     GenererDocument(){
