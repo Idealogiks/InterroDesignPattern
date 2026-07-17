@@ -20,8 +20,6 @@ Factory : Car il créera le bon type de document, selon ce qu'on demande, à un 
 /documents
     Document.js      
         => Classe parente, squelette commun (pour le template Method), GenererDocument()  
-    Facture.js             
-        => enfant, redéfinit son propre GetTitre(), afficherArticle() et calculerTotal()
     Devis.js 
         => enfant, redéfinit son propre GetTitre(), afficherArticle() et calculerTotal()              
     Avoir.js 
