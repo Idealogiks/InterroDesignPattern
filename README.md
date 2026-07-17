@@ -11,7 +11,9 @@ En gros : Problème de maintenabilité, d'évolutivité et de lisibilité
 
 #2 - Les patterns que je propose 
 
-Factory 
+Template Method : Pour éviter de duppliquer les mêmes codes pour différents documents alors que la logique est la même (à quelques détails près). Il y aurait un squelette commun et chaque coument ne définierait que ses trucs à lui qui varieraient.  (maintenabilité/lisibilité)
 
-Template Method 
+Factory : Car il créera le bon type de document, selon ce qu'on demande, à un seul endroit. Ajouter un document, ça sera juste rajouter une nouvelle ligne sans devoir toucher à tout le code. Cela évitera les dupplications. (évolutivité)
+
+
 
