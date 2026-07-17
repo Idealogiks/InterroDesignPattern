@@ -1,18 +1,17 @@
-import Facture from "./Facture.js";
 import Devis from "./Devis.js";
 import Avoir from "./Avoir.js";
 
 export default class DocumentFactory {
-    create(type) {
-        switch (type.toLowerCase()) {
+    create(item) {
+        switch (item.type.toLowerCase()) {
             case 'facture':
-                return new Facture();
+                return new Facture(item);
             case 'devis':
-                return new Devis();
+                return new Devis(item);
             case 'avoir':
-                return new Avoir();
+                return new Avoir(item);
             default:
-                throw new Error(`Le type de document "${type}" n'est pas reconnu.`);
+                throw new Error(`Le type de document "${item.type}" n'est pas reconnu.`);
         }
     }
 }
